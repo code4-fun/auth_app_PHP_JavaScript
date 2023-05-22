@@ -36,7 +36,7 @@ CREATE TABLE `users` (
   `birth` date DEFAULT NULL,
   `attempts` int NOT NULL DEFAULT '0',
   `timeout` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
