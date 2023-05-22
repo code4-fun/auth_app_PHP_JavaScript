@@ -1,0 +1,127 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: 500;
+  color: #495057;
+  background: #eeeeee;
+  font-family: 'Raleway', sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  max-width: 1046px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+/* login form */
+.form_container {
+  display: flex;
+  max-width: 550px;
+  margin: auto;
+  padding: 20px 30px 30px;
+  background: #eeeeee;
+}
+#form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.form_item {
+  margin: 0 0 20px 0;
+}
+.form_input_login,
+.form_input_password {
+  padding: 15px;
+  width: 100%;
+  height: 45px;
+  font-size: 20px;
+}
+.form_input_login:focus,
+.form_input_password:focus {
+  color: inherit;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.signin_button,
+.signout_button {
+  height: 45px;
+  padding: 0 15px;
+  font-size: 20px;
+  background: #435cfc;
+  color: #eeeeee;
+  border: 0;
+  font-family: 'Raleway', sans-serif;
+  align-self: flex-end;
+}
+.signin_button:hover,
+.signout_button:hover {
+  background: #5d73f8;
+  cursor: pointer;
+}
+.signin_button:active,
+.signout_button:active {
+  border-color: rgba(0, 123, 255, 0.25);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* body */
+.main_container {
+  margin: auto;
+}
+.main_container > *:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+.auth_success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  background-color: lightgreen;
+  margin: 2px 0 0 2px;
+  transition: .5s linear;
+}
+.avatar_block img {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+}
