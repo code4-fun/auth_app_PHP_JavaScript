@@ -16,7 +16,7 @@ if($_POST){
   }
 
   $login = $_POST['login'];
-  $db = @mysqli_connect('localhost', 'root', '', 'php-auth', 3306) or die('db connection error');
+  $db = @mysqli_connect('localhost', 'root', '', 'php_auth', 3306) or die('db connection error');
   mysqli_set_charset($db, 'utf8') or die('charset is not set');
 
   $user = mysqli_query($db, "select * from users where login = '".$login."'");
@@ -82,6 +82,7 @@ if($_POST){
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="icon" href="./favicon.png" type="image/x-icon">
       <link rel="stylesheet" href="styles.css">
       <title>Auth</title>
     </head>
